@@ -1,0 +1,147 @@
+.header-page {
+    background-color: blue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-page__select-board {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-right: 1px;
+}
+
+.header-page__select-pixel {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-right: 1px;
+}
+
+.header-page button {
+    width: 100px;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    background-color: purple;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+.main-page {
+    background-color: lightblue;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-page__boardDraw {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 400px;
+    height: 400px;
+}
+
+.main-page__boardDraw h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-page__boardDraw p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+.choice-color {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.choice-color input[type=radio] {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    border-radius: 30px;
+    transition: width 0.1s ease, heigt 0.1s ease, border-radius 0.1s ease;
+}
+
+.choice-color input[type=radio]:checked {
+    border: 3px solid black;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+}
+
+#erase {
+    display: none;
+    border: none;
+    background-color: gray;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+#erase:hover {
+    background-color: red;
+}
+
+#erase:active {
+    background-color: darkred;
+    color: white;
+}
+
+#colorBlue {
+    background-color: blue;
+}
+
+#colorRed {
+    background-color: red;
+}
+
+#colorGreen {
+    background-color: green;
+}
+
+#colorYellow {
+    background-color: yellow;
+}
+
+#colorBlack {
+    background-color: black;
+}
+
+#colorWhite {
+    background-color: white;
+}

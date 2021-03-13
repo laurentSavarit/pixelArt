@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ardoise Magique</title>
+</head>
+
+<body>
+    <header class="header-page">
+
+        <select id="boardFormat" class="header-page__select-board">
+            <option>Taille de la grille</option>
+            <option value="200">200px</option>
+            <option value="400">400px</option>
+            <option value="600">600px</option>
+            <option value="800">800px</option>
+        </select>
+        <select id="pixelFormat" class="header-page__select-pixel">
+            <option>Taille des pixels</option>
+            <option value="10">10px</option>
+            <option value="20">20px</option>
+            <option value="40">40px</option>
+            <option value="60">60px</option>
+        </select>
+        <button id="submitButton">Valider</button>
+
+    </header>
+    <main class="main-page">
+        <div class="main-page__boardDraw">
+            <h1>Bienvenue sur notre Ardoise magique</h1>
+            <p>Selectionner une taille de planche et une taille de pixel</p>
+        </div>
+        <form class="choice-color">
+            <input type="radio" name="color" value="blue" id="colorBlue" checked>
+            <input type="radio" name="color" value="red" id="colorRed">
+            <input type="radio" name="color" value="green" id="colorGreen">
+            <input type="radio" name="color" value="yellow" id="colorYellow">
+            <input type="radio" name="color" value="black" id="colorBlack">
+            <input type="radio" name="color" value="white" id="colorWhite">
+
+        </form>
+        <button id="erase">Effacer</button>
+    </main>
+
+
+    <script src="js/appArt.js"></script>
+</body>
+
+</html>
